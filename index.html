@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <title>Matvei Tikka</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hei, my name is Matvei Tikka. Welcome to my page!" />
+    <meta name="author" content="Matvei Tikka" />
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-xl">
+      <div class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
+        <img
+          alt="profile image"
+          class="img-fluid p-2 m-2"
+          src=".img/lineart_trans.png"
+          style="width: 250px;"
+        />
+        <div class="text-center">
+          <h1>Matvei Tikka<br /></h1>
+          <h4 class="text-muted text-monospace">Software engineer</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://github.com/matikka96" target="_blank">GitHub</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/matvei-tikka/" target="_blank">LinkedIn</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://aemail.com/4yn" target="_blank">Email</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="./cv_matvei_tikka_eng.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#Projects-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#9b9b9b"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="arcs"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </a>
+      </div>
+
+      <a name="Projects-link"></a>
+      <h1 class="text-center text-muted py-3">Projects</h1>
+      <hr />
+      <div class="row d-flex align-items-center py-3">
+        <div class="col-sm-6">
+          <img
+            src="./img/salegator_preview.png"
+            class="img-fluid mx-auto d-block rounded p-2"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-sm-6">
+          <h4>Saledor <small class="ml-2 text-muted">In development</small></h4>
+          <p class="text-justify">
+            Web app that aggregates fashion sale items from several vendors into one place. Python
+            script is parsing products from different API’s, normalizes data and saves it in to the
+            local SQLite database. Server is running on Node.js with the help of Express.js
+            framework. It loads data from the database according to the requests from the client
+            side. React.js is used in pair with Bootstrap to deliver fast and intuitive client side
+            experience.
+          </p>
+          <p>
+            <code>React.js, Node.js, Bootstrap, Python, SQLite, Cloud services</code>
+          </p>
+          <a href="https://saledor.com" target="_blank">www.saledor.com</a>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center py-3">
+        <div class="col-sm-6">
+          <img
+            src="https://raw.githubusercontent.com/matikka96/yrityshaku/master/public/screenshot.png"
+            class="img-fluid mx-auto d-block rounded p-2"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-sm-6">
+          <h4>Yrityshaku</h4>
+          <p class="text-justify">
+            Työkalun tarkoituksena on hakea yrityksiä ja niiden tietoja toimialan ja
+            maantieteellisen sijainnin perusteella. Hakutulos on ladattavissa CSV tai XLSX
+            formaateissa. Sisältö haetaan PRH:n avoimen datan rajapinnasta. Voit esimerkiksi hakea
+            kaikki televiestinnän yritykset alueelta Helsinki (toimialakoodi = 61 ja kotipaikka =
+            Helsinki).
+          </p>
+          <p>
+            <code>React.js, Node.js, Bootstrap, REST API</code>
+          </p>
+          <a href="https://yhaku.tikka.dev/" target="_blank">Web app</a>
+          <span> |</span>
+          <a href="https://github.com/matikka96/yrityshaku" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center py-3">
+        <div class="col-sm-6">
+          <img
+            src="./img/vaisal.png"
+            class="img-fluid mx-auto d-block rounded p-2"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-sm-6">
+          <h4>VAISAL</h4>
+          <p class="text-justify">
+            Vaisal is a young and fast growing real estate business. We had two main goals to
+            achieve on this case: create a memorable and modern branding for the company and then
+            develop a website based on that. Website needed to showcase allthe main services and
+            provide all necessary contact information.
+          </p>
+          <p>
+            <code>Wordpress, CSS, Graphic, Pixelmator</code>
+          </p>
+          <a href="https://vaisal.fi" target="_blank">www.vaisal.fi</a>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center py-3">
+        <div class="col-sm-6">
+          <img
+            src="./img/scraper.png"
+            class="img-fluid mx-auto d-block rounded p-4"
+            style="max-height: 320px;"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-sm-6">
+          <h4>Python scraper</h4>
+          <p class="text-justify">
+            Script utilizes Reddit’s API for scraping information from specified subreddits. It has
+            been built to run on Raspberry Pi Zero autonomously. Data and log files are
+            automatically uploaded to specified Dropbox account so that user can remotely analyse
+            data and check for the errors and malfunctions.
+          </p>
+          <p>
+            <code>Python, SQLite, Raspberry Pi</code>
+          </p>
+          <a href="https://github.com/matikka96/subreddit_scraper" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <a
+          href="https://github.com/matikka96"
+          class="btn btn-outline-secondary mx-auto my-3"
+          target="_blank"
+          role="button"
+          >More on GitHub</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
