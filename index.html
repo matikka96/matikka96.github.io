@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125036842-1"></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-125036842-1");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MVBW42B");
     </script>
+
+    <!-- End Google Tag Manager -->
     <title>Matvei Tikka</title>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My name is Matvei Tikka. Welcome to my page!" />
     <meta name="author" content="Matvei Tikka" />
+    <meta name="keywords" content="homepage, resume, matvei tikka, projects, software engineer" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/matikka96/homepage/master/img/profile_sun_01.jpg"
+    />
     <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
   </head>
 
@@ -26,9 +35,9 @@
       <div class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
         <img
           alt="profile image"
-          class="img-fluid p-2 m-2"
-          src="./img/lineart_trans.png"
-          style="width: 250px;"
+          class="img-fluid m-3 rounded-circle shadow"
+          src="./img/profile_sun_01.jpg"
+          style="max-height: 225px;"
         />
         <div class="text-center">
           <h1>Matvei Tikka<br /></h1>
@@ -113,7 +122,7 @@
           <p>
             <code>React.js, Node.js, Bootstrap, REST API</code>
           </p>
-          <a href="https://yhaku.tikka.dev/" target="_blank">Web app</a>
+          <a href="https://matvei.xyz/app/yrityshaku/" target="_blank">Web app</a>
           <span> |</span>
           <a href="https://github.com/matikka96/yrityshaku" target="_blank">GitHub</a>
         </div>
@@ -176,25 +185,5 @@
         >
       </div>
     </div>
-
-    <!-- Leadfeeder integration -->
-    <script>
-      (function () {
-        window.ldfdr = window.ldfdr || {};
-        (function (d, s, ss, fs) {
-          fs = d.getElementsByTagName(s)[0];
-
-          function ce(src) {
-            var cs = d.createElement(s);
-            cs.src = src;
-            setTimeout(function () {
-              fs.parentNode.insertBefore(cs, fs);
-            }, 1);
-          }
-
-          ce(ss);
-        })(document, "script", "https://sc.lfeeder.com/lftracker_v1_Xbp1oaEGO9X7EdVj.js");
-      })();
-    </script>
   </body>
 </html>

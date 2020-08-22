@@ -1,3 +1,3 @@
 # homepage
-https://tikka.dev
-https://matikka96.github.io/homepage/
+* https://matvei.xyz/
+* https://matikka96.github.io/homepage/
