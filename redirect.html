@@ -14,7 +14,11 @@
   </head>
   <body>
     <script>
-      window.location.replace("https://matvei.xyz/");
+      if (document.referrer == "") {
+        window.location.replace("https://matvei.xyz/");
+      } else {
+        window.location.replace("https://matvei.xyz/?ref=" + document.referrer);
+      }
     </script>
   </body>
 </html>
