@@ -20,29 +20,33 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My name is Matvei Tikka. Welcome to my page!" />
     <meta name="author" content="Matvei Tikka" />
-    <meta name="keywords" content="homepage, resume, matvei tikka, projects, software engineer" />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/matikka96/homepage/master/img/profile_sun_01.jpg"
-    />
+    <meta name="description" content="My name is Matvei Tikka. Welcome to my page!" />
+    <meta name="keywords" content="matvei tikka, software engineer, homepage, resume, projects" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/31724958" />
     <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .box {
+        transition-duration: 300ms;
+        border-radius: 1rem;
+      }
+      .box:hover {
+        box-shadow: 15px 15px 30px lightgrey, -15px -15px 30px white;
+      }
+    </style>
   </head>
 
-  <body>
+  <body class="text-monospace" style="background-color: mintcream">
     <div class="container-xl">
-      <div class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
-        <img
-          alt="profile image"
-          class="img-fluid m-3 rounded-circle shadow"
-          src="./img/profile_sun_01.jpg"
-          style="max-height: 225px"
-        />
-        <div class="text-center">
-          <h1>Matvei Tikka<br /></h1>
-          <h4 class="text-muted text-monospace">Software engineer</h4>
-          <ul class="list-inline">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center"
+        style="min-height: 90vh"
+      >
+        <div class="px-4 py-3 box">
+          <h1>Hi 👋</h1>
+          <h4 class="text-muted">My name is Matvei</h4>
+
+          <ul class="list-inline m-0">
             <li class="list-inline-item">
               <a href="https://github.com/matikka96" target="_blank">GitHub</a>
             </li>
@@ -52,144 +56,8 @@
             <li class="list-inline-item">
               <a href="https://aemail.com/4yn" target="_blank">Email</a>
             </li>
-            <!-- <li class="list-inline-item">
-              <a
-                href="https://www.dropbox.com/sh/074ot6mdkcm1jnv/AAD0Fj-pNUPnrmAU1KtIWocWa?dl=0"
-                target="_blank"
-                >Resume</a
-              >
-            </li> -->
           </ul>
         </div>
-        <a href="#Projects-link">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#9b9b9b"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="arcs"
-          >
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </a>
-      </div>
-
-      <a name="Projects-link"></a>
-      <h1 class="text-center text-muted py-3">Projects</h1>
-      <hr />
-      <div class="row d-flex align-items-center py-3">
-        <div class="col-sm-6">
-          <img
-            src="./img/salegator_preview.png"
-            class="img-fluid mx-auto d-block rounded p-2"
-            alt="Saledor service preview"
-          />
-        </div>
-        <div class="col-sm-6">
-          <h4>Saledor <small class="ml-2 text-muted">In development</small></h4>
-          <p class="text-justify">
-            Web app that aggregates fashion items from several vendors into single place. Python
-            script is parsing products from different API’s, normalizes data and saves it in to the
-            SQL database. Server is running on Node.js with the help of Express.js framework. It
-            loads data from the database according to the requests from the client side. React.js is
-            used in pair with Bootstrap to deliver fast, intuitive and mobile friendly client side
-            experience.
-          </p>
-          <p>
-            <code>React.js, Node.js, Bootstrap, Python, SQL, Server management</code>
-          </p>
-          <a href="https://saledor.com" target="_blank">www.saledor.com</a>
-        </div>
-      </div>
-
-      <div class="row d-flex align-items-center py-3">
-        <div class="col-sm-6">
-          <img
-            src="https://raw.githubusercontent.com/matikka96/yrityshaku/master/public/screenshot.png"
-            class="img-fluid mx-auto d-block rounded p-2"
-            alt="Yrityshaku website preview"
-          />
-        </div>
-        <div class="col-sm-6">
-          <h4>Yrityshaku</h4>
-          <p class="text-justify">
-            Työkalun tarkoituksena on hakea yrityksiä ja niiden tietoja toimialan ja
-            maantieteellisen sijainnin perusteella. Hakutulos on ladattavissa CSV tai XLSX
-            formaateissa. Sisältö haetaan PRH:n avoimen datan rajapinnasta. Voit esimerkiksi hakea
-            kaikki televiestinnän yritykset alueelta Helsinki (toimialakoodi = 61 ja kotipaikka =
-            Helsinki).
-          </p>
-          <p>
-            <code>React.js, Node.js, Bootstrap, REST API</code>
-          </p>
-          <a href="https://matikka96.github.io/yrityshaku/" target="_blank">Web app</a>
-          <span> |</span>
-          <a href="https://github.com/matikka96/yrityshaku" target="_blank">GitHub</a>
-        </div>
-      </div>
-
-      <div class="row d-flex align-items-center py-3">
-        <div class="col-sm-6">
-          <img
-            src="https://tiilikattopinnoitus.fi/wp-content/uploads/2018/03/logo-1.png"
-            class="img-fluid mx-auto d-block rounded p-4"
-            style="max-width: 300px"
-            alt="Suomen Tiilikattopinnoitus logo"
-          />
-        </div>
-        <div class="col-sm-6">
-          <h4>Suomen Tiilikattopinnoitus</h4>
-          <p class="text-justify">
-            Finnish company that specializes on roof maintenance related services. Website have been
-            built with the following aspects in mind:
-          </p>
-          <ul>
-            <li>Modern looking and responsive design</li>
-            <li>Detailed service and experience demonstration</li>
-            <li>Good SEO optimization</li>
-          </ul>
-          <p>
-            <code>Wordpress, CSS, SEO optimization, Graphical design</code>
-          </p>
-          <a href="https://tiilikattopinnoitus.fi/" target="_blank">www.tiilikattopinnoitus.fi</a>
-        </div>
-      </div>
-
-      <div class="row d-flex align-items-center py-3">
-        <div class="col-sm-6">
-          <img
-            src="./img/scraper.png"
-            class="img-fluid mx-auto d-block rounded p-4"
-            style="max-height: 320px"
-            alt="Code preview"
-          />
-        </div>
-        <div class="col-sm-6">
-          <h4>Python scraper</h4>
-          <p class="text-justify">
-            Script utilizes Reddit’s API for scraping information from specified subreddits. It has
-            been built to run on Raspberry Pi Zero autonomously. Data and log files are
-            automatically uploaded to specified Dropbox account so that user can remotely analyse
-            data and check for the errors and malfunctions.
-          </p>
-          <p>
-            <code>Python, SQLite, REST API, Raspberry Pi</code>
-          </p>
-          <a href="https://github.com/matikka96/subreddit_scraper" target="_blank">GitHub</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <a
-          href="https://github.com/matikka96"
-          class="btn btn-outline-secondary mx-auto my-3"
-          target="_blank"
-          role="button"
-          >More on GitHub</a
-        >
       </div>
     </div>
   </body>
