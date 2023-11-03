@@ -1,0 +1,39 @@
+baseURL: "https://matvei.xyz/"
+languageCode: en
+title: matvei.xyz
+theme: archie
+copyright: © Matvei
+pygmentsstyle: monokai
+pygmentscodefences: true
+pygmentscodefencesguesssyntax: true
+# disqusShortname: yourDisqusShortname
+paginate: 5
+
+params:
+  mode: auto
+  useCDN: false
+  subtitle: "Hello and welcome to my webpage! 👋"
+  mathjax: false
+  katex: false
+  social:
+    - name: GitHub
+      icon: github
+      url: "https://github.com/matikka96"
+    # - name: Twitter
+    #   icon: twitter
+    #   url: "https://twitter.com/athulcajay/"
+
+menu:
+  main:
+    - name: Posts
+      url: /posts
+      weight: 1
+    - name: GitHub
+      url: https://github.com/matikka96
+      weight: 2
+    # - name: About
+    #   url: /about
+    #   weight: 3
+    # - name: Tags
+    #   url: /tags
+    #   weight: 4

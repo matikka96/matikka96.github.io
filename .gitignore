@@ -1,3 +1,6 @@
-/flamingo
-/stuff
+# Hugo files
+/public
+.hugo_build.lock
+
+# Other
 .DS_Store
