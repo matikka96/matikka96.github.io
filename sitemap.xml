@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://matvei.xyz/posts/hello-world/</loc>
+    <loc>https://matvei.xyz/posts/hello-world/</loc>
     <lastmod>2023-11-03T18:23:27+02:00</lastmod>
   </url><url>
-    <loc>http://matvei.xyz/</loc>
+    <loc>https://matvei.xyz/</loc>
     <lastmod>2023-11-03T18:23:27+02:00</lastmod>
   </url><url>
-    <loc>http://matvei.xyz/posts/</loc>
+    <loc>https://matvei.xyz/posts/</loc>
     <lastmod>2023-11-03T18:23:27+02:00</lastmod>
   </url><url>
-    <loc>http://matvei.xyz/about/</loc>
+    <loc>https://matvei.xyz/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://matvei.xyz/categories/</loc>
+    <loc>https://matvei.xyz/categories/</loc>
   </url><url>
-    <loc>http://matvei.xyz/tags/</loc>
+    <loc>https://matvei.xyz/tags/</loc>
   </url>
 </urlset>
